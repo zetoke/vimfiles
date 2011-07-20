@@ -3,6 +3,7 @@ filetype off
 
 "load pathogen managed plugins
 call pathogen#runtime_append_all_bundles()
+call togglebg#map("<F5>")
 
 set nocompatible
 
@@ -26,6 +27,8 @@ set wrapscan
 set incsearch
 set ignorecase
 
+set number
+
 set scrolljump=7
 set scrolloff=7
 
@@ -38,7 +41,9 @@ filetype plugin on
 filetype indent on
 
 set t_Co=256
-colorscheme darktango
+"colorscheme darktango
+set background=dark
+colorscheme solarized
 
 
 set mouse=a
